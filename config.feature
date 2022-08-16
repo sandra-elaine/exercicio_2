@@ -10,12 +10,12 @@
             Dado que eu acesse a página de produtos da EBAC-SHOP
 
             Cenário:Configuração de um produto válida
-            Quando eu escolher a cor , o tamanho
-            E a quantidade
+            Quando eu selecionar a cor , o tamanho
+            E  escolher a quantidade
             Então eu posso inserir o produto no carrinho
 
             Cenário:Quantidade válida de produtos por venda
-            Quando eu escolher a cor, o tamanho, a quantidade
+            Quando eu selecionar a cor, o tamanho, a quantidade
             E se a quantidade for até 10 produtos
             Então eu posso inserir os produtos no carrinho
 
@@ -24,17 +24,17 @@
             E clicar no botão voltar
             Então o sistema deve voltar para o estado original
 
-            Esquema do Cenário: Configuração de produto(s) válidas
-            Quando selecionar a <cor>, o <tamanho>
-            E a <quantidade>
-            Então eu posso inserir o produto no carrinho
+            Esquema do Cenário: Configuração de produto(s) válidas(s)
+            Quando eu selecionar a <cor>, o <tamanho>, a <quantidade>
+            E se a quantidade for até 10 produtos
+            Então eu posso inserir os produtos no carrinho
 
             Exemplos:
-            | cor    | tamanho | quantidade |
-            | "Azul" | "PP"    | "2"        |
-            | "Branca" | "P"    | "4"        |
-            | "Branca | "36"    | "3"        |
-            | "Bege" | "M"    | "1"        |
+            | cor      | tamanho | quantidade |
+            | "Branca" | "PP"    | "1"        |
+            | "Branca" | "36"    | "10"       |
+            | "Verde"  | "M"     | "10"       |
+
 
 
 
